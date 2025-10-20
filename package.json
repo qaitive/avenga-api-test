@@ -8,7 +8,7 @@
     "report": "npx mocha test/*.js --timeout 10000 --reporter mochawesome",
     "testReport": "mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index"
   },
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/node": "^7.12.6",
