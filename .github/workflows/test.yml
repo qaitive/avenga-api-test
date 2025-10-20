@@ -37,7 +37,7 @@ jobs:
         run: docker-compose run test-runner npm run report
 
       - name: Upload Mochawesome report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report
           path: mochawesome-report/
