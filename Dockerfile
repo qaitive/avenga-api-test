@@ -7,9 +7,6 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json (if exists)
 COPY package*.json ./
 
-# Install mocha
-RUN npm install -g 
-
 # Install dependencies
 RUN npm install --include=dev
 
