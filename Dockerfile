@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install mocha
-RUN npm install -g mocha@10.7.3
+RUN npm install -g 
 
 # Install dependencies
 RUN npm install --include=dev
