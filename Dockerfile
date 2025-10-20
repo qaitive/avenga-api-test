@@ -1,5 +1,5 @@
 # Use Node.js 16 as the base image
-FROM  node:16
+FROM node:20-slim
 
 # Create a non-root user
 RUN useradd -ms /bin/bash appuser
