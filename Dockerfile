@@ -2,8 +2,8 @@
 FROM node:20-slim
 
 # Create a non-root user
-RUN useradd -ms /bin/bash appuser
-USER appuser
+#RUN useradd -ms /bin/bash appuser
+#USER appuser
 
 # Set working directory
 WORKDIR /usr/src/app
