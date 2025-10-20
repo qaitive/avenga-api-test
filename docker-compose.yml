@@ -10,4 +10,4 @@ services:
     #volumes:
    #   - .:/usr/src/app
     #  - ./mochawesome-report:/usr/src/app/mochawesome-report
-    command: npm test
+    command: npm run testReport
