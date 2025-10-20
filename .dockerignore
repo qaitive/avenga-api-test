@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+*.log
+
+# Mochawesome reports
+mochawesome-report/
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git and CI/CD
+.git/
+.gitignore
