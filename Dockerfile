@@ -11,6 +11,10 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json (if exists)
 COPY package*.json ./
 
+#Install mocha globally
+
+RUN npm install -g mocha@10.7.3
+
 # Install dependencies
 RUN npm install --include=dev
 
