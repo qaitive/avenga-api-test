@@ -4,7 +4,7 @@
   "author": "Veljko Jovancic",
   "description": " API testing project using Axios, Mocha, and Chai",
   "scripts": {
-    "test": "node_modules/mocha --timeout 10000",
+    "test": "mocha test/*.js --timeout 10000",
     "report": "mocha test/*.js --timeout 10000 --reporter mochawesome",
     "testReport": "mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index"
   },
