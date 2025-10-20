@@ -15,8 +15,11 @@ COPY package*.json ./
 
 RUN npm install -g mocha@10.7.3
 
+
 # Install dependencies
 RUN npm install --include=dev
+
+RUN npm list --depth=0
 
 # Copy the rest of the project files
 COPY . .
