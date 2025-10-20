@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx mocha test/*.js --timeout 10000",
     "report": "npx mocha test/*.js --timeout 10000 --reporter mochawesome",
-    "testReport": "mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index"
+    "testReport": "npx mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index"
   },
     "dependencies": {
     "axios": "^1.7.2",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@faker-js/faker": "^9.0.3",
     "chai": "^5.1.1",
-    "mocha": "^10.7.3"
+    "mocha": "^10.7.3",
+    "mochawesome": "^6.2.1"
   }
 }
