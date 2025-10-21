@@ -77,7 +77,7 @@ describe("Book API Tests", () => {
         logger.debug("Response: " + JSON.stringify(response.data, null, 2));
         expect(response.status).to.equal(200);
         expect(response.data).to.deep.equal(fakerBook);
-        const res = await ApiService.getBookById(fakerBook.id);
+        const res = await ApiService.getBookById(fakerBook.id,{timeout:3000});
         expect(res.status).to.equal(200);
         expect(res.data).to.deep.include({
           id: fakerBook.id,
