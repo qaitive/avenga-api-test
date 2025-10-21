@@ -5,10 +5,9 @@
   "description": " API testing project using Axios, Mocha, and Chai",
   "scripts": {
     "test": "npx mocha test/*.js --timeout 10000",
-    "report": "npx mocha test/*.js --timeout 10000 --reporter mochawesome",
-    "testReport": "npx mocha --reporter mochawesome --reporter-options reportDir=mochawesome-report,reportFilename=index"
+    "report": "npx mocha test/*.js --timeout 10000 --reporter mochawesome"
   },
-    "dependencies": {
+  "dependencies": {
     "axios": "^1.7.2",
     "winston": "^3.14.2"
   },

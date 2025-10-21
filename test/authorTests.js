@@ -285,14 +285,11 @@ describe("Author API Tests", () => {
         logger.debug("Created author: " + JSON.stringify(createResponse.data, null, 2));
 
         // Update
-        const updateResponse = await ApiService.updateAuthor(
-          fakerAuthor.id,
-          fakerAuthor
-        );
+        const updateResponse = await ApiService.updateAuthor(fakerAuthor.id, fakerAuthor);
         expect(updateResponse.status).to.equal(200);
         expect(updateResponse.data).to.deep.equal(fakerAuthor);
         logger.debug("Updated author: " + JSON.stringify(updateResponse.data, null, 2));
-        
+
         // Delete
         const deleteResponse = await ApiService.deleteAuthor(fakerAuthor.id);
         expect(deleteResponse.status).to.equal(200);
